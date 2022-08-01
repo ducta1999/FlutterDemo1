@@ -3,11 +3,13 @@ import 'package:http/http.dart' as http;
 import 'package:lottie/lottie.dart';
 import 'dart:convert';
 import 'package:simple_moment/simple_moment.dart';
+import './login.dart';
 
 void main() {
   runApp(
     const MaterialApp(
       home: MyApp(),
+      color: Colors.white,
     ),
   );
 }
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'CRUD with Mock API'),
+      home: const Login(),
     );
   }
 }
